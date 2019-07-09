@@ -1,6 +1,4 @@
-//input "hello world!"
-//output
-"!dlrow olleh"
+
 var c = '';
 function balikString(teks) {
     var b = teks.length;
