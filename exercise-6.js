@@ -1,4 +1,3 @@
-
 function angkaPalindrome(num) {
     if(num <9) {
         return num+1;
@@ -11,7 +10,7 @@ function angkaPalindrome(num) {
             if(Number(nextPalindromeSameBaseEvenLengthNumber(num)) > num) {
                 return nextPalindromeSameBaseEvenLengthNumber(num);    
             } else {
-                return nextPalindromeIncrementBaseOddLengthNumber(num);
+                return nextPalindromeIncrementBaseEvenLengthNumber(num);
             }
         } else {
             nextPalindromeSameBaseOddLengthNumber(num);
