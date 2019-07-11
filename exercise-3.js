@@ -12,8 +12,8 @@ var input = [
 
 
 function dataHandling(input) {
-    for(i=0;i<input.length;i++) {
-        console.log('Nomor ID: ' + input[i][0] +'\nNama Lengkap: ' + input[i][1] + '\nTTL: ' + input[i][2] +' '+ input[i][3] + '\nHobi: ' + input[i][4] + '\n');
+    for(var i=0;i<input.length;i++) {
+        console.log('Nomor ID: ' + input[i][0] +'\n'+'Nama Lengkap: ' + input[i][1] +'\n'+ 'TTL: ' + input[i][2] +' '+ input[i][3] + '\n'+'Hobi: ' + input[i][4] + '\n');
     }
 }
 

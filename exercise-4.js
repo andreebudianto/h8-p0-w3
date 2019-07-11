@@ -1,6 +1,4 @@
-//contoh output
-["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"]
-var input = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
+
 function dataHandling2(input) {
 
 input.splice(1,1,"Roman Alamsyah Elsharawy");
@@ -56,5 +54,5 @@ console.log(input[3].split('/').join('-'));
 var nama = input[1].slice(0,14);
 console.log(nama);
 }
-
+var input = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"];
 dataHandling2(input);
