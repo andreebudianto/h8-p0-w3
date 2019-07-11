@@ -1,28 +1,14 @@
-function pasanganTerbesar(num) {
-    function makeArray(num) {
-        var convStr = String(num);
-        var charLength = convStr.length;
-        var array = [];
-        for(var i = 0; i < charLength-1; i ++) {
-            array.push(convStr[i]+convStr[i+1])
-        } return array; 
-    }
-
-    var array = makeArray(num);
-    var result = Number(array[0]);
-    for(var i = 0; i < array.length-1; i ++) {
-        var result2 = 0;
-        result2 = result2 + Number(array[i+1]);
-        if(result > result2) {
-            result = result;
-        } else {
-            result = result2;
-        } 
-    } return result;
-}
-
-console.log(pasanganTerbesar(641573)); // 73
-  console.log(pasanganTerbesar(12783456)); // 83
-  console.log(pasanganTerbesar(910233)); // 91
-  console.log(pasanganTerbesar(71856421)); // 85
-  console.log(pasanganTerbesar(79918293)); // 99
+function cariMean(arr) {
+    var result = 0;
+    for(var i =0; i < arr.length; i++) {
+        result = result + Number(arr[i]);
+        Number(result);
+    } return Math.round(result/(arr.length));
+  }
+  
+  // TEST CASES
+  console.log(cariMean([1, 2, 3, 4, 5])); // 3
+  console.log(cariMean([3, 5, 7, 5, 3])); // 5
+  console.log(cariMean([6, 5, 4, 7, 3])); // 5
+  console.log(cariMean([1, 3, 3])); // 2
+  console.log(cariMean([7, 7, 7, 7, 7])); // 7
